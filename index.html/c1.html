@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALL OF DUTY MOBILE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="call.jpeg"alt="Website Logo" width="250" height="100">
+    <img src="call1.jpeg" alt="Website Logo" width="200" height="100">
+    <img src="callw.jpeg" alt="Website Logo" width="200" height="100">
+    <img src="call4.jpeg" alt="Website Logo" width="200" height="100">
+    <img src="call5.jpeg" alt="website logo" width="200" height="100">
+    <div class="hero-section">
+        <div class="background-animation"></div>
+        <div class="content">
+            <h1 class="glowing-text">CALL OF DUTY MOBILE</h1>
+            <p class="tagline">Experience the ultimate mobile battle royale,
+                Even tho <strong>FREE FIRE</strong> is Better.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter&hl=en-US&pli=1"><button class="cta-button">PLAY NOW</button></a>
+        </div>
+    </div>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Background Animation */
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #f36161, #7272f1, #081408, #b9b94c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Content Styling */
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+.glowing-text {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #63c0a9, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ffaa, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cta-button:hover {
+    background-color: #cc0000;
+}
+    </style>
+</body>
+</html>
